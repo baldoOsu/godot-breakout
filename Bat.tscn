@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://dxnnx7hiuuy23"]
+
+[ext_resource type="Script" path="res://Bat.cs" id="1_b1qca"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_wnerd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6428e"]
+size = Vector2(150, 22)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_p1tkc"]
+
+[node name="Bat" type="Node2D"]
+
+[node name="Bat" type="CharacterBody2D" parent="."]
+material = SubResource("CanvasItemMaterial_wnerd")
+script = ExtResource("1_b1qca")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bat"]
+shape = SubResource("RectangleShape2D_6428e")
+
+[node name="Sprite2D" type="Sprite2D" parent="Bat"]
+position = Vector2(-7.62939e-06, 0)
+scale = Vector2(150, 22)
+texture = SubResource("CanvasTexture_p1tkc")

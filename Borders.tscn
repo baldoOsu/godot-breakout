@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://rcawlmtya71"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ealuo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nwmal"]
+size = Vector2(12.5, 601.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6mkv8"]
+size = Vector2(824, 10)
+
+[node name="Borders" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_ealuo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-5.75, 300.25)
+shape = SubResource("RectangleShape2D_nwmal")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(806, 300)
+shape = SubResource("RectangleShape2D_nwmal")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(400, -5)
+shape = SubResource("RectangleShape2D_6mkv8")
