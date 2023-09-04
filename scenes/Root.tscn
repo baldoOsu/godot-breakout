@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8wn22cr7vbxw"]
+
+[ext_resource type="PackedScene" uid="uid://dxnnx7hiuuy23" path="res://scenes/Bat.tscn" id="1_fpgoc"]
+[ext_resource type="PackedScene" uid="uid://b1g2osdlklotk" path="res://scenes/Ball.tscn" id="2_egsvu"]
+[ext_resource type="PackedScene" uid="uid://rcawlmtya71" path="res://scenes/Borders.tscn" id="3_hdpbp"]
+
+[node name="Root" type="Node2D"]
+
+[node name="Bat" parent="." instance=ExtResource("1_fpgoc")]
+position = Vector2(400, 567)
+
+[node name="Ball" parent="." instance=ExtResource("2_egsvu")]
+position = Vector2(400, 518)
+
+[node name="Borders" parent="." instance=ExtResource("3_hdpbp")]

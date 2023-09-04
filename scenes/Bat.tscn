@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dxnnx7hiuuy23"]
 
-[ext_resource type="Script" path="res://Bat.cs" id="1_b1qca"]
+[ext_resource type="Script" path="res://src/Bat.cs" id="1_b4jr1"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_wnerd"]
 
@@ -9,11 +9,12 @@ size = Vector2(150, 22)
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_p1tkc"]
 
-[node name="Bat" type="Node2D"]
+[node name="BatRoot" type="Node2D"]
 
 [node name="Bat" type="CharacterBody2D" parent="."]
 material = SubResource("CanvasItemMaterial_wnerd")
-script = ExtResource("1_b1qca")
+script = ExtResource("1_b4jr1")
+metadata/Name = "Bat"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bat"]
 shape = SubResource("RectangleShape2D_6428e")
